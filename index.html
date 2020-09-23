@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+  </head>
+  <body>
+    <main class="l-main">
+      <header class="l-header">
+        <h1>消費カロリー</h1>
+      </header>
+      <div class="modal" style="display: none;">
+        <div class="content-wrapper header-nav">
+          <input id="l-calender" type="date" >
+        </div>
+        <section class="l-traning">
+          <div class="content-wrapper">
+            <ul class="c-traningList">
+              <li class="c-traning c-btn" data-ctrl="4"><a href="#">背中</a></li>
+              <li class="c-traning c-btn" data-ctrl="4"><a href="#">腹筋</a></li>
+              <li class="c-traning c-btn" data-ctrl="4"><a href="#">脚</a></li>
+              <li class="c-traning c-btn" data-ctrl="6"><a href="#">有酸素</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="l-time">
+          <div class="c-time">
+            <form>
+              <input id="c-minute" class="c-minute" type="text" name="time" size="10" maxlength="10" value="">
+            </form>
+            <h2 class="c-minuteTxt">分</h2>
+          </div>
+          <input class="c-okBtn" type="submit" value="OK">
+        </section>
+        <div class="modal-close"><a href="#">×</a></div>
+      </div>
+      <div class="l-contents">
+        <section class="l-section">
+          <input id="c-month" class="c-month" type="month" name="example">
+          <input class="c-goBtn" type="submit" value="GO">
+          <div class="c-kcal">
+            <ul>
+              <li>背中の消費カロリー<span class="c-value">0</span>kcal</li>
+              <li>腹筋の消費カロリー<span class="c-value">0</span>kcal</li>
+              <li>脚の消費カロリー<span class="c-value">0</span>kcal</li>
+              <li>有酸素の消費カロリー<span class="c-value">0</span>kcal</li>
+            </ul>
+          </div>
+          <input class="modal-show" type="submit" value="入力">
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="content-wrapper">
+      
+      </div>
+    </footer>
+    <script src="js/script.js">
+    </script>
+  </body>
+</html>
